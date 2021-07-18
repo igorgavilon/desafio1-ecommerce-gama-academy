@@ -4,10 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles.css" rel="stylesheet">
-    <title>Super Descontos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" 
+    rel="stylesheet">
+    <title>Super Sales</title>
 </head>
 <body>
-    <h1>Super $ Descontos</h1>
+    <div class="headerContainer">
+        <p>+55 48 3344 5566</p>
+        <p>supersales@gmail.com</p>
+        <p>
+            <span class="material-icons">facebook</span>
+            <span class="material-icons">face</span>
+        </p>
+    </div>
+    <div class="bannerContainer">
+        <p class="mainTitle">Super<span id="simboloCifra">$</span>Sales</p>
+        <div class="menuIconContainer">
+            <span id="menuIcon" class="material-icons">menu</span>
+        </div>
+        <div class="callToActionPrimaryText">
+            <p>A MAIS AGUARDADA</p>
+            <span class="spanDestaqueCallText">QUEIMA DE ESTOQUE</span> 
+            <p>ESTÁ CHEGANDO...</p>
+        </div>
+        <div class="callToActionSecondaryText">
+            <p>Fique ligado e aproveite para economizar <b>até 90%</b> com essa incrível promoção.</p>
+            <p>Cadastre seu melhor e-mail e receba as novidades em primeira mão!</p>
+        </div>
+    </div>
+    <div class="emailBoxContainer">
+        <input type="text" name="email" id="inputEmail" placeholder="Email"/>
+        <button id="buttonEmail">Quero Economizar</button>
+    </div>
+
+    <div class="topDescontosContainer">
+        <p id="topDescontosTitle">TOP DESCONTOS</p>
+        <div class="cartProdutos">
+            <p class="cartProdutosTitle">TÊNIS ESPORTIVOS</p>
+            <div class="cartImage">
+                <div class="descontoValor">-40%</div>
+                <img src="./res/tenis_esportivo.jpeg" width="350px" height="350px"/>
+            </div>
+            
+        </div>
+
+        <div class="cartProdutos">
+            <p class="cartProdutosTitle">RELÓGIOS</p>
+            <div class="descontoValor">-60%</div>
+            <img src="./res/relogio.jpeg" width="350px" height="350px"/>
+        </div>
+
+        <div class="cartProdutos">
+            <p class="cartProdutosTitle">BOLSAS</p>
+            <div class="descontoValor">-70%</div>
+            <img src="./res/bolsas.jpeg" width="350px" height="350px"/>
+        </div>
+
+        <div class="cartProdutos">
+            <p class="cartProdutosTitle">ACESSÓRIOS</p>
+            <div class="descontoValor">-90%</div>
+            <img src="./res/acessorios.jpeg" width="350px" height="350px"/>
+        </div>
+        
+    </div>
+
+    <div class="footerContainer">
+        <div class="footerTitle">
+            <p class="mainTitle">Super<span id="simboloCifra">$</span>Sales</p>
+        </div>
+        
+        <div class="footerSocialMedias">
+            <p>
+                <span class="material-icons">facebook</span>
+                <span class="material-icons">face</span>
+            </p>
+        </div>
+
+        <div class="contatos">
+            <p>CONTATO</p>
+            <div class="listaContatos">
+                <div class="listaContatosItem">
+                    <p><span class="material-icons">place</span></p>
+                    <span>Av. Central, 300. Florianópolis, SC.</span>
+                </div>
+                <div class="listaContatosItem">
+                    <p><span class="material-icons">schedule</span></p>
+                    <span>Seg - Sáb 8:00h - 18:00h</span>
+                </div>
+                <div class="listaContatosItem">
+                    <p><span class="material-icons">phone</span></p>
+                    <span>+55 48 3344 5566</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div class="footerBoxEmail">
+            <p>RECEBA NOVIDADES</p>
+            <input type="text" name="email" id="inputEmail" placeholder="Email"/>
+            <button id="buttonEmail">INSCREVER-SE</button>
+        </div> -->
+        
+    </div>
     
 </body>
 </html>
