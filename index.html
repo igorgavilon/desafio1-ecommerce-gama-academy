@@ -47,7 +47,7 @@
 
         <div class="emailBoxBannerContainer">
             <input type="text" name="email" id="inputEmail" placeholder="Email"/>
-            <button id="buttonEmail">Quero Economizar</button>
+            <button id="buttonEmail" >Quero Economizar</button>
         </div>
     </div>
     <div class="emailBoxContainer">
@@ -126,15 +126,22 @@
     
             </div>
         </div>
-        
 
-        <!-- <div class="footerBoxEmail">
-            <p>RECEBA NOVIDADES</p>
-            <input type="text" name="email" id="inputEmail" placeholder="Email"/>
-            <button id="buttonEmail">INSCREVER-SE</button>
-        </div> -->
-        
     </div>
+
+    <script type="application/javascript">
+        var gravarEmail = function gravarEmail() {
+            const email = document.getElementById("inputEmail").value;
+            if(email != "") {
+                localStorage.setItem("email", email);
+            }
+        }
+        
+        var obj = document.getElementById("buttonEmail");
+        //obj.onclick = gravarEmail;
+        //ou
+        obj.addEventListener("click", gravarEmail);
+    </script>
     
 </body>
 </html>
