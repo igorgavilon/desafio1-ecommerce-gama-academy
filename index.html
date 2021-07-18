@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" 
@@ -17,15 +17,24 @@
         <p>+55 48 3344 5566</p>
         <p>supersales@gmail.com</p>
         <p>
-            <span class="material-icons">facebook</span>
-            <span class="material-icons">face</span>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
         </p>
     </div>
     <div class="bannerContainer">
-        <p class="mainTitle">Super<span id="simboloCifra">$</span>Sales</p>
-        <div class="menuIconContainer">
-            <span id="menuIcon" class="material-icons">menu</span>
+        <div class="menuContainer">
+            <div class="mainTitle">Super<span id="simboloCifra">$</span>Sales</div>
+            <div class="menuIconContainer">
+                <i id="menuIcon" class="bi bi-list"></i>
+            </div>
+            <div class="menuList">
+                <div>Produtos</div>
+                <div>Cadastro</div>
+                <div>FAQ</div>
+            </div>
         </div>
+        
         <div class="callToActionPrimaryText">
             <p>A MAIS AGUARDADA</p>
             <span class="spanDestaqueCallText">QUEIMA DE ESTOQUE</span> 
@@ -35,6 +44,11 @@
             <p>Fique ligado e aproveite para economizar <b>até 90%</b> com essa incrível promoção.</p>
             <p>Cadastre seu melhor e-mail e receba as novidades em primeira mão!</p>
         </div>
+
+        <div class="emailBoxBannerContainer">
+            <input type="text" name="email" id="inputEmail" placeholder="Email"/>
+            <button id="buttonEmail">Quero Economizar</button>
+        </div>
     </div>
     <div class="emailBoxContainer">
         <input type="text" name="email" id="inputEmail" placeholder="Email"/>
@@ -43,31 +57,33 @@
 
     <div class="topDescontosContainer">
         <p id="topDescontosTitle">TOP DESCONTOS</p>
-        <div class="cartProdutos">
-            <p class="cartProdutosTitle">TÊNIS ESPORTIVOS</p>
-            <div class="cartImage">
-                <div class="descontoValor">-40%</div>
-                <img src="./res/tenis_esportivo.jpeg" width="350px" height="350px"/>
+        <div class="cartProdutosContainer">
+            <div class="cartProdutos">
+                <p class="cartProdutosTitle">TÊNIS ESPORTIVOS</p>
+                <div class="cartImage">
+                    <div class="descontoValor">-40%</div>
+                    <img src="./res/tenis_esportivo.jpeg" width="350px" height="350px"/>
+                </div>
+                
             </div>
-            
-        </div>
-
-        <div class="cartProdutos">
-            <p class="cartProdutosTitle">RELÓGIOS</p>
-            <div class="descontoValor">-60%</div>
-            <img src="./res/relogio.jpeg" width="350px" height="350px"/>
-        </div>
-
-        <div class="cartProdutos">
-            <p class="cartProdutosTitle">BOLSAS</p>
-            <div class="descontoValor">-70%</div>
-            <img src="./res/bolsas.jpeg" width="350px" height="350px"/>
-        </div>
-
-        <div class="cartProdutos">
-            <p class="cartProdutosTitle">ACESSÓRIOS</p>
-            <div class="descontoValor">-90%</div>
-            <img src="./res/acessorios.jpeg" width="350px" height="350px"/>
+    
+            <div class="cartProdutos">
+                <p class="cartProdutosTitle">RELÓGIOS</p>
+                <div class="descontoValor">-60%</div>
+                <img src="./res/relogio.jpeg" width="350px" height="350px"/>
+            </div>
+    
+            <div class="cartProdutos">
+                <p class="cartProdutosTitle">BOLSAS</p>
+                <div class="descontoValor">-70%</div>
+                <img src="./res/bolsas.jpeg" width="350px" height="350px"/>
+            </div>
+    
+            <div class="cartProdutos">
+                <p class="cartProdutosTitle">ACESSÓRIOS</p>
+                <div class="descontoValor">-90%</div>
+                <img src="./res/acessorios.jpeg" width="350px" height="350px"/>
+            </div>
         </div>
         
     </div>
@@ -76,32 +92,41 @@
         <div class="footerTitle">
             <p class="mainTitle">Super<span id="simboloCifra">$</span>Sales</p>
         </div>
-        
-        <div class="footerSocialMedias">
-            <p>
-                <span class="material-icons">facebook</span>
-                <span class="material-icons">face</span>
-            </p>
-        </div>
-
-        <div class="contatos">
-            <p>CONTATO</p>
-            <div class="listaContatos">
-                <div class="listaContatosItem">
-                    <p><span class="material-icons">place</span></p>
-                    <span>Av. Central, 300. Florianópolis, SC.</span>
-                </div>
-                <div class="listaContatosItem">
-                    <p><span class="material-icons">schedule</span></p>
-                    <span>Seg - Sáb 8:00h - 18:00h</span>
-                </div>
-                <div class="listaContatosItem">
-                    <p><span class="material-icons">phone</span></p>
-                    <span>+55 48 3344 5566</span>
-                </div>
+        <div class="footerColumns">
+            <div class="footerSocialMedias">
+                <p>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                </p>
             </div>
-
+    
+            <div class="footerMenu">
+                <div>Produtos</div>
+                <div>Cadastro</div>
+                <div>FAQ</div>
+            </div>
+    
+            <div class="contatos">
+                <p>CONTATO</p>
+                <div class="listaContatos">
+                    <div class="listaContatosItem">
+                        <p><i class="bi bi-geo-alt-fill"></i></p>
+                        <span>Av. Central, 300. Florianópolis, SC.</span>
+                    </div>
+                    <div class="listaContatosItem">
+                        <p><i class="bi bi-clock-fill"></i></p>
+                        <span>Seg - Sáb 8:00h - 18:00h</span>
+                    </div>
+                    <div class="listaContatosItem">
+                        <p><i class="bi bi-telephone-fill"></i></p>
+                        <span>+55 48 3344 5566</span>
+                    </div>
+                </div>
+    
+            </div>
         </div>
+        
 
         <!-- <div class="footerBoxEmail">
             <p>RECEBA NOVIDADES</p>

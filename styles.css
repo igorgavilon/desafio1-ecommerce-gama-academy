@@ -6,6 +6,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .headerContainer {
     width: 100vw;
     height: auto;
@@ -19,6 +23,9 @@
 }
 
 .bannerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: auto;
     text-align: center;
@@ -31,18 +38,24 @@
     font-size: 2.0rem;
 }
 
-.menuIconContainer {
-    
-}
-
 #menuIcon {
     color: #ffba00;
-    font-size: 3.0rem;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 #simboloCifra {
     font-size: 3.0rem;
     color: red;
+}
+
+.menuList {
+    font-size: 0;
+    visibility: hidden;
+}
+
+.menuList div {
+    margin-left: 20px;
 }
 
 .callToActionPrimaryText {
@@ -62,6 +75,10 @@
     font-weight: 300;
     color: #ffba00;
     
+}
+
+.emailBoxBannerContainer {
+    display: none;
 }
 
 .emailBoxContainer {
@@ -143,6 +160,23 @@
 
 .footerSocialMedias {
     margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.bi {
+    margin-left: 5px;
+}
+
+.footerMenu {
+    font-size: 1.3rem;
+}
+
+.footerMenu div {
+    margin-top: 10px;
+}
+
+.footerMenu div:hover {
+    text-decoration: underline;
 }
 
 .contatos {
@@ -172,4 +206,118 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (min-width: 600px) {
+    .headerContainer {
+        width: 100vw;
+        height: auto;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        font-size: 1.0rem;
+        font-weight: 300;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1.5px solid grey;
+    }
+
+    .menuIconContainer {
+        display: none;
+    }
+
+    .menuContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .mainTitle {
+        flex: 4;
+    }
+
+    .menuList {
+        visibility: visible;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        align-items: center;
+    }
+
+    .menuList div:hover {
+        text-decoration: underline;
+    }
+
+    #inputEmail {
+        width: 540px;
+    }
+    
+    #buttonEmail {
+        width: 360px;
+    }
+}
+
+
+@media (min-width: 900px) {
+    
+    .emailBoxContainer {
+        display: none;
+    }
+
+    .emailBoxBannerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 700px;
+        height: auto;
+        padding: 10px 10px;
+        margin-top: 10px;
+        background-color: #ffba00;
+        border-radius: 10px;
+    }
+
+    #inputEmail {
+        width: 500px;
+        height: 50px;
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+    
+    #buttonEmail {
+        width: 320px;
+        height: 50px;  
+    }
+
+    .callToActionPrimaryText {
+        font-size: 1.5rem;
+    }
+    
+    .spanDestaqueCallText {
+        font-size: 3.5rem;
+    }
+    
+    .callToActionSecondaryText {
+        font-size: 1.5rem;        
+    }
+    
+    .cartProdutosContainer {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    
+    
+    
+    .footerColumns {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: baseline;
+    }
 }
